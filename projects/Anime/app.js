@@ -7,6 +7,7 @@ const url2 = new URL(window.location.href);
 url2.searchParams.set('page', 1);
 history.pushState({}, '', url2);
 
+
 const hasVerticalScroll = window.innerHeight > document.body.scrollHeight;
 if(hasVerticalScroll){
 	document.querySelector('main').style = `height:${window.innerHeight}px;`
