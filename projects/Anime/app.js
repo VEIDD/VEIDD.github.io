@@ -114,6 +114,17 @@ function renderInfoAnime(info){
 		if(info.trailer.embed_url === null){
 			return
 		}
+		if(video === null){
+			video = document.createElement('iframe');
+
+			video.src = info.trailer.embed_url;
+			video.frameBorder = '0'; 
+			video.width = '560';
+			video.height = '315';
+			video.setAttribute('allowfullscreen', '');
+			
+			player.append(video)
+		}
 		video.src = info.trailer.embed_url
 		player.classList.remove('hidden')
 		
