@@ -122,7 +122,8 @@ function renderInfoAnime(info){
 			video.width = '560';
 			video.height = '315';
 			video.setAttribute('allowfullscreen', '');
-			
+			video.referrerpolicy = 'strict-origin-when-cross-origin'
+			video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin'
 			player.append(video)
 		}
 		video.src = info.trailer.embed_url
