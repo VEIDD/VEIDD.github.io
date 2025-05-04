@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--text-color-header:rgb(92, 138, 113);
+	--btn-select-color:rgb(92, 138, 113);
+	--active-btn-select-color:rgb(64, 95, 78);
+	--body-bg:#afabab;
+	--element-bg:#333;
+}
+main {
+	height: 0px;
+}
+header {
+	height: 80px;
+	background-color: var(--element-bg);
+}
+body {
+	height: 500px;
+	background-color: var(--body-bg);
+}
+.title {
+	color: var(--text-color-header);
+	text-align: center;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.title2 {
+	text-align: center;
+	margin-top: -15px;
+	a {
+		color: var(--text-color-header);
+		font-size: 25px;
+		text-decoration: none;
+	}
+	
+}
+.card_anime {
+	border-radius: 15px;
+	box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	width: 300px;
+	height: 500px;
+	background-color: var(--element-bg);
+	margin-left: 100px;
+	margin-top: 50px;
+	padding: 25px;
+}
+
+.cards {
+
+	display: flex;
+	flex-wrap: wrap;
+}
+.text_card {
+	color: var(--text-color-header);
+	font-size: 22px;
+	cursor: pointer;
+}
+.count_episodes {
+	color: var(--text-color-header);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+  left: 0;
+  width: 100%;
+	background-color: var(--element-bg);
+	height: 50px;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+
+.page_btn, .page_btn_more, .page_btn_return {
+
+	border-radius: 10px;
+	border: none;
+	width: 40px;
+	height: 30px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	cursor: pointer;
+	background-color: var(--text-color-header);
+	transition: 0.3s;	
+
+}
+.page_btn:active {
+	background-color: var(--active-btn-select-color);
+}
+
+.info_card {
+	width: 1000px;
+	max-height: 1200px;
+	background-color: var(--element-bg);
+	margin-top: 50px;
+	margin-left: 450px;
+	img {
+		padding: 20px;
+	}
+	display: flex;
+	border-radius: 15px;
+	padding: 10px;
+
+}
+
+.left_part_card {
+	.left_date_release, .left_title_card_info, .left_episodes {
+		color: var(--text-color-header);
+		margin-left: 20px;
+	}
+	.left_title_card_info {
+		font-size: 30px;
+	}
+}
+.right_part_card {
+	margin-top: 15px;
+	font-size: 20px;
+	color: var(--text-color-header);
+}
+
+.a_right_part_crad_info, .a_watch_anime {
+	text-decoration: none;
+	color: var(--text-color-header);
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
+.content {
+	display: flex;
+}
+
+.animate {
+  animation: appearance 2s ease-in-out;
+}
+
+
+@keyframes appearance {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

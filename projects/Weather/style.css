@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--text-color-header:rgb(92, 138, 113);
+	--btn-select-color:rgb(92, 138, 113);
+	--active-btn-select-color:rgb(64, 95, 78);
+	--body-bg:#afabab;
+	--element-bg:#333;
+}
+
+body {
+	background-color: #afabab;
+}
+header {
+	display: flex;
+	align-items: center;
+	height: 75px;
+	gap: 20px;
+	background-color: #333;
+}
+.title {
+	color: var(--text-color-header);
+}
+a {
+	text-decoration: none;
+	color: var(--text-color-header);
+}
+.block {
+	background-color: #333;
+	width: 270px;
+	min-height: 300px;
+	max-height: 500px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	animation: appearance 1s;
+}
+img {
+	width: 150px;
+	height: 160px;
+	transform: translate(40%);
+}
+p {
+	padding: 10px;
+	font-size: 16px;
+	color: var(--text-color-header);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin-left: 5px;
+}
+.container {
+	margin-top: 20px;
+	margin-left: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.btn {
+	border-radius: 10px;
+	border: none;
+	width: 75px;
+	height: 40px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	cursor: pointer;
+	background-color: var(--text-color-header);
+	transition: 0.3s;
+}
+
+.active {
+	pointer-events: none;
+	background-color: var(--active-btn-select-color);
+}
+
+.more_info {
+	cursor: pointer;
+}
+.btn_return {
+	border-radius: 10px;
+	border: none;
+	width: 75px;
+	height: 50px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	cursor: pointer;
+}
+
+.container2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 250px;
+}
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	height: 300px;
+	border: 5px solid rgb(255, 0, 0);
+	border-radius: 10px;
+}
+.error p{
+	font-size: 55px;
+	color: red;
+}
+.hidden {
+	display: none;
+}
+
+.container3 {
+	display: flex;
+	
+}
+.block2 {
+	width: 270px;
+	position: absolute;
+	left: 350px;
+	animation: appearance 1s;
+}
+
+@keyframes appearance {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+
+	}
+}
+
