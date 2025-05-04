@@ -2,10 +2,15 @@ let swap_btns = document.querySelectorAll('.page_btn')
 let page = 1
 let url = ``
 let text_anime = document.querySelector('.title')
+
+const url2 = new URL(window.location.href);
+url2.searchParams.set('page', 1);
+
 const hasVerticalScroll = window.innerHeight > document.body.scrollHeight;
 if(hasVerticalScroll){
 	document.querySelector('main').style = `height:${window.innerHeight}px;`
 }
+
 async function fetchAnime(next_page) {
 	if(next_page !== undefined){page=next_page}
 	let tempData = await fetch(`https://api.jikan.moe/v4/anime?page=${page}`)
